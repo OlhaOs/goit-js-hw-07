@@ -1,0 +1,29 @@
+body {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item {
+  /* max-width: calc(100vw / 3); */
+  height: 300px;
+}
+li {
+  list-style: none;
+}
+.flex {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+}
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
+
