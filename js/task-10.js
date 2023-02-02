@@ -19,13 +19,16 @@ function onDestroyBtn() {
 
 function createBoxes(amount) {
   for (let i = 0; i < amount; i++) {
-    const newEl= document.createElement('div');
+    const colorDiv = getRandomHexColor();
+    const newEl = document.createElement('div');
     newEl.style.width = `${30 + i * 10}px`;
     newEl.style.height = `${30 + i * 10}px`;
-    newEl.style.border = `2px solid ${getRandomHexColor()}`;
+    newEl.style.border = `2px solid ${colorDiv}`;
     newEl.style.margin = '10px';
+    newEl.style.backgroundColor = `${colorDiv}`;
 
     refs.collection.append(newEl);
+    
   }
 }
 
